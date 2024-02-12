@@ -7,6 +7,12 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./funcionario-form.component.css']
 })
 export class FuncionarioFormComponent implements OnInit{
+  
+  submit(
+    
+  ) {
+  throw new Error('Method not implemented.');
+  }
 
   funcionarioForm!: FormGroup;
 
