@@ -1,4 +1,4 @@
-<h1>Cadastrar Funcionário</h1>
+<h1>{{ txtTitulo }}</h1>
 
 <form [formGroup]="funcionarioForm" (ngSubmit)="submit()" #formDit="ngForm">
     <div class="input_box">
@@ -24,14 +24,14 @@
     <div class="input_box">
       <label for="">Turno:</label>
       <select id="turno" formControlName="turno" required>
-        <option value="Manhã">Manhã</option>
+        <option value="Manhã">Manha</option>
         <option value="Tarde">Tarde</option>
         <option value="Noite">Noite</option>
       </select>
     </div>
 
     <div class="btn-box">
-        <button type="submit">Cadastrar</button>
-        <button>Voltar</button>
+        <button type="submit" [disabled]="!funcionarioForm.valid" >{{ btnAcao }}</button>
+        <button routerLink="">Voltar</button>
     </div>
 </form>
