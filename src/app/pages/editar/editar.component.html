@@ -1,3 +1,6 @@
-<div>
-    <app-funcionario-form [btnAcao]="btnAcao" [txtTitulo]="txtTitulo" [dadosFuncionario]="funcionario"></app-funcionario-form>
+<div *ngIf="funcionario"> <!--Espera o funcionario ser recarregado-->
+    <app-funcionario-form [btnAcao]="btnAcao"
+                          [txtTitulo]="txtTitulo"
+                          [dadosFuncionario]="funcionario"
+                          (onSubmit)="editarFuncionario($event)" ></app-funcionario-form>
 </div>

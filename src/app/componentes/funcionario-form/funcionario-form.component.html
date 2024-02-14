@@ -1,6 +1,9 @@
 <h1>{{ txtTitulo }}</h1>
 
 <form [formGroup]="funcionarioForm" (ngSubmit)="submit()" #formDit="ngForm">
+
+  <input type="hidden" formControlName="id"> <!--MApeando id-->
+
     <div class="input_box">
         <label for="">Nome:</label>
         <input type="text" formControlName="nome" placeholder="Inserir o nome!" required>
@@ -24,7 +27,7 @@
     <div class="input_box">
       <label for="">Turno:</label>
       <select id="turno" formControlName="turno" required>
-        <option value="Manhã">Manha</option>
+        <option value="Manha">Manhã</option>
         <option value="Tarde">Tarde</option>
         <option value="Noite">Noite</option>
       </select>
