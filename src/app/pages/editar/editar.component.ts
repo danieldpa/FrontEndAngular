@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Funcionario } from 'src/app/models/Funcionario';
 
 @Component({
   selector: 'app-editar',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./editar.component.css']
 })
 export class EditarComponent {
+  btnAcao: string = "Editar";
+  txtTitulo: string = "Editar Funcionário";
+  funcionario!: Funcionario;
 
 }

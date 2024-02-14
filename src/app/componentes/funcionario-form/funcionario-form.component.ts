@@ -13,6 +13,7 @@ export class FuncionarioFormComponent implements OnInit{
   @Output() onSubmit = new EventEmitter<Funcionario>();
   @Input() btnAcao!: string;
   @Input() txtTitulo!: string;
+  @Input() dadosFuncionario!: Funcionario;
 
 
   funcionarioForm!: FormGroup;
