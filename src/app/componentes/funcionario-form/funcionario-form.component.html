@@ -1,40 +1,42 @@
-<h1>{{ txtTitulo }}</h1>
+<mat-card>
+  <h1>{{ txtTitulo }}</h1>
 
-<form [formGroup]="funcionarioForm" (ngSubmit)="submit()" #formDit="ngForm">
+  <form [formGroup]="funcionarioForm" (ngSubmit)="submit()" #formDit="ngForm">
 
-  <input type="hidden" formControlName="id"> <!--MApeando id-->
+    <input type="hidden" formControlName="id"> <!--MApeando id-->
 
-    <div class="input_box">
-        <label for="">Nome:</label>
-        <input type="text" formControlName="nome" placeholder="Inserir o nome!" required>
-    </div>
+      <div class="input_box">
+          <label for="">Nome:</label>
+          <input type="text" formControlName="nome" placeholder="Inserir o nome!" required>
+      </div>
 
-    <div class="input_box">
-      <label for="">Sobrenome:</label>
-      <input type="text" formControlName="sobrenome" placeholder="Inserir o sobrenome!" required>
-    </div>
+      <div class="input_box">
+        <label for="">Sobrenome:</label>
+        <input type="text" formControlName="sobrenome" placeholder="Inserir o sobrenome!" required>
+      </div>
 
-    <div class="input_box">
-      <label for="">Departamento:</label>
-      <select id="departamento" formControlName="departamento" required>
-        <option value="RH">RH</option>
-        <option value="Financeiro">Financeiro</option>
-        <option value="Compras">Compras</option>
-        <option value="Atendimento">Atendimento</option>
-      </select>
-    </div>
+      <div class="input_box">
+        <label for="">Departamento:</label>
+        <select id="departamento" formControlName="departamento" required>
+          <option value="RH">RH</option>
+          <option value="Financeiro">Financeiro</option>
+          <option value="Compras">Compras</option>
+          <option value="Atendimento">Atendimento</option>
+        </select>
+      </div>
 
-    <div class="input_box">
-      <label for="">Turno:</label>
-      <select id="turno" formControlName="turno" required>
-        <option value="Manha">Manhã</option>
-        <option value="Tarde">Tarde</option>
-        <option value="Noite">Noite</option>
-      </select>
-    </div>
+      <div class="input_box">
+        <label for="">Turno:</label>
+        <select id="turno" formControlName="turno" required>
+          <option value="Manha">Manhã</option>
+          <option value="Tarde">Tarde</option>
+          <option value="Noite">Noite</option>
+        </select>
+      </div>
 
-    <div class="btn-box">
-        <button type="submit" [disabled]="!funcionarioForm.valid" >{{ btnAcao }}</button>
-        <button routerLink="">Voltar</button>
-    </div>
-</form>
+      <div class="btn-box">
+          <button type="submit" [disabled]="!funcionarioForm.valid" mat-raised-button color="accent">{{ btnAcao }}</button>
+          <button routerLink="" mat-raised-button color >Voltar</button>
+      </div>
+  </form>
+</mat-card>
