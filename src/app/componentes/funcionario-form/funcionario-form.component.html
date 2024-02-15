@@ -4,10 +4,12 @@
   <form [formGroup]="funcionarioForm" (ngSubmit)="submit()" #formDit="ngForm">
 
     <input type="hidden" formControlName="id"> <!--MApeando id-->
-
+    
       <div class="input_box">
-          <label for="">Nome:</label>
+        <mat-form-field>
+          <mat-label for="">Nome:</mat-label>
           <input type="text" formControlName="nome" placeholder="Inserir o nome!" required>
+        </mat-form-field>
       </div>
 
       <div class="input_box">

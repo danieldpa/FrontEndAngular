@@ -1,0 +1,106 @@
+/* Estilos para o Formulário de Funcionário */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.input_box {
+    margin-bottom: 1rem;
+}
+
+.input_box mat-form-field, 
+.input_box select, 
+.input_box input {
+    width: 100%;
+    display: block;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.btn-box button {
+    cursor: pointer;
+}
+
+mat-form-field {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+select, input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+button[mat-raised-button] {
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 0.25rem;
+}
+
+button[mat-raised-button][color="accent"] {
+    background-color: #17a2b8;
+}
+
+button[mat-raised-button]:not([color]) {
+    background-color: #6c757d;
+}
+/* Estilos para o Formulário de Funcionário */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.input_box {
+    margin-bottom: 1rem;
+}
+
+.input_box mat-form-field, 
+.input_box select, 
+.input_box input {
+    width: 100%;
+    display: block;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.btn-box button {
+    cursor: pointer;
+}
+
+mat-form-field {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+select, input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+button[mat-raised-button] {
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 0.25rem;
+}
+
+button[mat-raised-button][color="accent"] {
+    background-color: #17a2b8;
+}
+
+button[mat-raised-button]:not([color]) {
+    background-color: #6c757d;
+}
