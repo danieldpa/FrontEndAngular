@@ -1,5 +1,7 @@
 # FrontEndAngular
 
+Objetivo do projeto usar FrameWork Angular como Front end para uma aplicação que consumo uma API com uma lista de funcionários.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 
 ## Development server
